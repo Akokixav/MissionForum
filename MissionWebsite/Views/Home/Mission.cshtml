@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Mission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Mission</h2>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- DROP DOWN MENU WITH MISSION OPTIONS -->
+
+            
+            <form action="/Home/MissionFAQs" method="get">
+
+                <fieldset>
+                    <h2>Please choose a mission: </h2> <select data-style="btn-primary"  class="selectpicker" id="Mission" name="missionID">
+
+                               
+                                <option value="1">Ghana Cape Coast</option>
+
+                                <option value="2">Abidjan Ivory Coast</option>
+                    
+                                <option value="3">Beijing China</option>
+
+                            </select>
+
+                    <p><input type="submit" value="Submit" /> </p>
+
+                </fieldset>
+
+            </form>
+           
+           
+        </div>
+
+        <div class="col-md-6">
+            <!--Mission photos \ -->
+            <img class="img-responsive" src="https://static1.squarespace.com/static/5627d978e4b09cd5164401ee/t/56b11b4a62cd94166996d97d/1454538600477/BoM.jpg" />
+
+        </div>
+    </div>
+
+
+
+</div>

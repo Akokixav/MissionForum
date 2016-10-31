@@ -1,0 +1,262 @@
+﻿
+@{
+    ViewBag.Title = "Mission View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Content/Customize.css" rel="stylesheet" />
+
+<!--Bread Crumb-->
+<nav class="breadcrumb">
+    <a class="breadcrumb-item">@Html.ActionLink("Mission", "Mission", "Home")</a>
+    <a class="breadcrumb-item">@Html.ActionLink("Contact", "Contact", "Home")</a>
+    <a class="breadcrumb-item">@Html.ActionLink("About us", "About", "Home")</a>
+    
+</nav>
+
+<!--Jumbotron-->
+
+<div class="jumbotron" style="background-image: url('@ViewBag.photo')" id="jumbojumbo">
+    <div class="container">
+        <div class="row">
+            <h2 class="col-sm-12 text-center" id="jumbotext">@ViewBag.name</h2>
+        </div>
+    </div>
+</div>
+
+
+
+    <!--Question Form -->
+
+<!------------container------->
+
+<div class="container">
+    <div class="row">
+        
+
+
+        <div id="customtext" class="col-md-6">
+            <h2>Mission Information</h2>
+
+            <p>Mission name: @ViewBag.name</p>
+            <p>Mission president’s name: @ViewBag.mpname</p>         <!--Flag display on the right-->
+            <p>Mission address: @ViewBag.address</p>
+            <p>Language:  @ViewBag.lang</p>
+            <p>Climate: @ViewBag.climate</p>
+            <p>Dominate religion:   @ViewBag.religion</p>
+            
+
+        </div>
+
+        <div class="col-md-6">
+            <p><img class="img-responsive" src="@ViewBag.flag"> </p>
+
+        </div>
+    </div>
+
+   
+
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Frequently Asked Questions</h1>
+
+                <h4>Who should serve a mission?</h4>
+                <p class="col-lg-offset-1">
+                    President Thomas S. Monson said: “We affirm that missionary work is a priesthood duty—and
+                    we encourage all young men who are worthy and who are physically able and mentally
+                    capable to respond to the call to serve. Many young women also serve,
+                    but they are not under the same mandate to serve as are the young men.
+                    We assure the young sisters of the Church, however, that they make a
+                    valuable contribution as missionaries, and we welcome their service.” (Thomas S. Monson, "Welcome to Conference," Liahona, November 2012, 4).
+
+
+
+
+                </p>
+                <!--POST COMMENT-->
+
+                <div class="container">
+                    <h3>Ask a question</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" placeholder="Enter your name">
+                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your question"></textarea>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- First Comment -->
+                <article class="row">
+                    <div class="col-md-2 col-sm-2 hidden-xs">
+                        <figure class="thumbnail">
+                            <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" />
+                            <figcaption class="text-center">username</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="panel panel-default arrow left">
+                            <div class="panel-body">
+                                <header class="text-left">
+                                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                                </header>
+                                <div class="comment-post">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <h4>How are missionaries called?</h4>
+                <p class="col-lg-offset-1">
+                    Every missionary who is called and assigned or reassigned to a particular mission is called
+                    by revelation through the Lord's servants, the prophets. A member of the Quorum of the
+                    Twelve assigns prospective missionaries to one of more than three hundred missions of the Church.
+                    Learn more by reading “The Divine Call of a Missionary,” Elder Ronald A. Rasband's April 2010 general conference address.
+
+                </p>
+
+                <div class="container">
+                    <h2>Ask a question</h2>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" placeholder="Enter your name">
+                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your question"></textarea>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- First Comment -->
+                <article class="row">
+                    <div class="col-md-2 col-sm-2 hidden-xs">
+                        <figure class="thumbnail">
+                            <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" />
+                            <figcaption class="text-center">username</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="panel panel-default arrow left">
+                            <div class="panel-body">
+                                <header class="text-left">
+                                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                                </header>
+                                <div class="comment-post">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <h4>How early can I submit my missionary papers?</h4>
+                <p class="col-lg-offset-1">
+                    The earliest date young men may enter the MTC is after graduating from high school or its
+                    equivalent and reaching 18 years of age. The earliest date women may
+                    enter the MTC is after their 19th birthday. Other influences on one's
+                    availability date may include completing a university semester,
+                    finishing an employment commitment, or stabilizing a medical condition.
+                    Speak with your priesthood leaders well before the 120 day submission window
+                    to start the recommendation process and to confirm your availability date.
+
+
+
+
+                </p>
+
+                <div class="container">
+                    <h3>Ask a question</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" placeholder="Enter your name">
+                                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your question"></textarea>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- First Comment -->
+                <article class="row">
+                    <div class="col-md-2 col-sm-2 hidden-xs">
+                        <figure class="thumbnail">
+                            <img class="img-responsive" src="http://www.keita-gaming.com/assets/profile/default-avatar-c5d8ec086224cb6fc4e395f4ba3018c2.jpg" />
+                            <figcaption class="text-center">username</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-10 col-sm-10">
+                        <div class="panel panel-default arrow left">
+                            <div class="panel-body">
+                                <header class="text-left">
+                                    <div class="comment-user"><i class="fa fa-user"></i> That Guy</div>
+                                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                                </header>
+                                <div class="comment-post">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>

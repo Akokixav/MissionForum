@@ -1,0 +1,19 @@
+﻿#jumbojumbo{
+    display: flex!important;
+   background-size: cover!important;
+   height: 15em;
+}
+
+h1{
+    color: white;
+}
+
+
+h3{
+    font-weight: bold;
+}
+
+#customtext{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+}
